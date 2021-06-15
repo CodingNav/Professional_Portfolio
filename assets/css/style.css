@@ -1,0 +1,5 @@
+.hero {
+    background-image: url("../images/chevron.jpeg");
+    background-size: contain;
+    height: 200px;
+}
