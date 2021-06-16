@@ -12,15 +12,19 @@ body {
 
 /* Header CSS */
 header {
-    padding: 20px;
+    padding: 15px 40px 20px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2f373b;
     color: #00e9bd;
 }
 
 header h1 {
+    color: #2f373b;
     display: inline-block;
     font-size: 48px;
+    background-color: #00e9bd;
+    padding-left: 50px;
+    padding-right: 20px;
 }
 
 header h1 .seo {
@@ -41,12 +45,15 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 header nav ul li a {
+    padding: 5px 10px;
     color: #00e9bd;
+    font-size: 23px;
     text-decoration: none;
+    border-bottom: 3px solid #00e9bd;
 }
 
 /* Section with background image */
