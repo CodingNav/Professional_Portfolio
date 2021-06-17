@@ -14,9 +14,12 @@
 }
 
 /* Entire body CSS */
+html,
 body {
     background-color: #dcfffd;
     font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 /* Header CSS */
@@ -99,15 +102,38 @@ h2 {
     border-right: 3px solid var(--tertiary-color);
 }
 
-img {
-    width: 300px;
+article {
+    width: 86%;
+}
+
+figure {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+
+figcaption {
+    position: absolute;
+    padding: 10px 10px 15px 25px;
+    bottom: 15%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+figcaption h3 {
+    font-size: 25px;
+    line-height: 40px;
 }
 
 /* About Me Section CSS */
-
-#about-content {
-    width: 86%;
-}
 
 #about-info {
     padding: 30px;
@@ -118,3 +144,16 @@ img {
     width: 250px;
     padding-right: 20px;
 }
+
+/* Work Section CSS */
+
+#work-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figure:nth-child(1) {
+    width: 100%;
+    height: unset;
+} 
