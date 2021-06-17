@@ -1,4 +1,5 @@
 /* CSS Variables */
+
 :root {
     --primary-color: #00e9bd;
     --secondary-color: #2f373b;
@@ -8,6 +9,7 @@
 }
 
 /* All elements CSS */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,8 +17,8 @@
 }
 
 /* Entire html and body CSS */
-html,
-body {
+
+html, body {
     background-color: var(--background-color);
     color: var(--secondary-color);
     font-family: var(--primary-font);
@@ -25,6 +27,7 @@ body {
 }
 
 /* Header CSS */
+
 header {
     padding: 15px 40px 20px 0px;
     background-color: var(--secondary-color);
@@ -71,6 +74,7 @@ header nav ul li a {
 }
 
 /* Section with background image */
+
 .hero {
     position: relative;
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/227/752/original/modern-blue-trendy-technology-background-vector.jpg");
@@ -84,11 +88,12 @@ header nav ul li a {
     bottom: 15%;
     padding: 10px;
     font-size: 30px;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
 /*  Overall Sections CSS*/
+
 section {
     display: flex;
     padding: 50px;
@@ -97,7 +102,7 @@ section {
 h2 {
     font-size: 40px;
     text-align: right;
-    width: 14%;
+    width: 21%;
     padding-right: 15px;
     margin-right: 30px;
     color: var(--tertiary-color);
@@ -124,12 +129,12 @@ figure img {
     border: 5px solid var(--primary-color);
 }
 
-figure:hover img{
+figure:hover img {
     opacity: 1;
     border: 5px solid var(--secondary-color);
 }
 
-figure:hover figcaption{
+figure:hover figcaption {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
@@ -148,6 +153,7 @@ figcaption h3 {
 }
 
 /* About Me Section CSS */
+
 #profile-image {
     float: left;
     width: 250px;
@@ -155,6 +161,7 @@ figcaption h3 {
 }
 
 /* Work Section CSS */
+
 #work-content {
     display: flex;
     flex-wrap: wrap;
@@ -164,9 +171,10 @@ figcaption h3 {
 figure:nth-child(1) {
     width: 100%;
     height: unset;
-} 
+}
 
 /* Contact Me CSS */
+
 article ul {
     display: flex;
     justify-content: space-between;
@@ -187,12 +195,15 @@ article ul li a {
 }
 
 article ul li a:hover {
-    color: #6b7c85;;
+    color: #6b7c85;
+    ;
     text-decoration: none;
-    border-bottom: 3px solid #8addce;;
+    border-bottom: 3px solid #8addce;
+    ;
 }
 
 /* Footer CSS */
+
 footer {
     position: relative;
     height: 150px;
@@ -207,4 +218,39 @@ footer p {
     width: 100%;
     bottom: 30px;
     text-align: center;
+}
+
+/* Medium Devices Responsiveness */
+
+@media only screen and (max-width: 911px) {
+    header nav {
+        padding-top: 25px;
+        float: none;
+    }
+    section {
+        padding: 30px;
+    }
+    h2 {
+        width: 25%;
+    }
+    figcaption h3 {
+        font-size: 18px;
+    }
+    article ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    article ul li {
+        padding: 5px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    figure {
+        width: 100%;
+    }
 }
