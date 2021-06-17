@@ -104,6 +104,7 @@ h2 {
 
 article {
     width: 86%;
+    padding: 20px;
 }
 
 figure {
@@ -134,10 +135,6 @@ figcaption h3 {
 }
 
 /* About Me Section CSS */
-
-#about-info {
-    padding: 30px;
-}
 
 #profile-image {
     float: left;
