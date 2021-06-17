@@ -17,6 +17,7 @@
 html,
 body {
     background-color: #dcfffd;
+    color: var(--secondary-color);
     font-family: var(--primary-font);
     scroll-behavior: smooth;
     overscroll-behavior: none;
@@ -114,12 +115,22 @@ figure {
     padding: 10px;
 }
 
+figure:hover img{
+    border: 5px solid var(--secondary-color);
+}
+
+figure:hover figcaption{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 5px solid var(--primary-color);
 }
+
 
 figcaption {
     position: absolute;
