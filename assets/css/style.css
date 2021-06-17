@@ -115,19 +115,21 @@ figure {
     padding: 10px;
 }
 
-figure:hover img{
-    border: 5px solid var(--secondary-color);
-}
-
 figure:hover figcaption{
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+figure:hover img{
+    opacity: 1;
+    border: 5px solid var(--secondary-color);
 }
 
 figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .6;
     border: 5px solid var(--primary-color);
 }
 
