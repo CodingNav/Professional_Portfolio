@@ -77,9 +77,9 @@ header nav ul li a {
 /* Section with background image */
 .hero {
     position: relative;
-    background-image: url("../images/chevron.jpeg");
-    background-size: contain;
-    height: 200px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/227/752/original/modern-blue-trendy-technology-background-vector.jpg");
+    background-size: cover;
+    height: 300px;
 }
 
 .subtitle {
