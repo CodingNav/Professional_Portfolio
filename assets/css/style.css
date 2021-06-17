@@ -139,7 +139,6 @@ figure img {
     border: 5px solid var(--primary-color);
 }
 
-
 figcaption {
     position: absolute;
     padding: 10px 10px 15px 25px;
@@ -188,6 +187,17 @@ article ul li {
     font-size: 20px;
     color: var(--secondary-color);
     border-bottom: 3px solid var(--tertiary-color);
+}
+
+article ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+article ul li a:hover {
+    color: #6b7c85;;
+    text-decoration: none;
+    border-bottom: 3px solid #8addce;;
 }
 
 /* Footer CSS */
