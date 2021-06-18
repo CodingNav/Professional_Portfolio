@@ -254,3 +254,48 @@ footer p {
         width: 100%;
     }
 }
+
+ /* Small Devices Responsiveness */
+ @media only screen and (max-width: 600px) {
+
+    header nav ul li {
+        margin-top: 15px;
+    }
+
+    section {
+        display: block;
+    }
+
+    h2 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        border: none;
+        border-bottom: solid var(--tertiary-color);
+    }
+
+    article {
+        width: 100%;
+    }
+
+    #profile-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    figcaption {
+        padding: 7px;
+    }
+
+    figcaption p {
+        font-size: 13px;
+    }
+
+    article ul li {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+
+ }
